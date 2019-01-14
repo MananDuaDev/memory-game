@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MEMORY GAME</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://underscorejs.org/underscore-min.js"></script>
+    <script type="text/javascript" src="script/main.js"></script>
+</head>
+
+<body ng-app="memoryGameApp" ng-controller="memoryGameCtrl">
+    <div class="start-page main" ng-hide="true">
+        <div class="col-md-12 text-center topic-name">MEMORY GAME</div>
+        <div class="text-center "><img src="https://cdn.frugalfun4boys.com/wp-content/uploads/2018/07/Beginning-Sounds-Memory-5-Edited.jpg"></div>
+            <div class="required-info text-center start-page">
+                <span class="col-md-12 spacing-info start-page">ENTER THE NUMBER OF ROW'S  :: <input class="input-box" ng-model="row" type="text" autofocus></span>
+                <span class="col-md-12 spacing-info start-page">ENTER THE NUMBER OF COLOUM'S :: <input class="input-box" ng-model="coloum" type="text" autofocus></span>
+            </div>
+            <div class="col-md-12 text-center start-button start-page">START</div>
+        </div>
+    <div class="main-conatiner">
+        <div class="col-md-6 memory-card text-center" ng-class="{'flip':ro.fliped == true}" ng-repeat="ro in letters" ng-click="check(ro,$index)">
+            <div>{{ro.name}}</div>
+        </div>
+    </div>
+</body>
+
+</html>

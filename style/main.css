@@ -1,0 +1,72 @@
+body{
+	height: 100vh;
+	display: flex;
+	background: #e0e0e0;
+}
+
+.main-conatiner{
+	margin: auto;
+}
+
+.topic-name {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    padding-top: 10px;
+    color: slategrey;
+}
+
+.required-info {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.spacing-info {
+    padding-top: 10px;
+}
+
+input {
+    border: 0px;
+    background: #f4f1ea;
+}
+
+img {
+    padding-top: 10px;
+    width: 50%;
+}
+
+.start-page {
+    background-color: wheat;
+    color: lightseagreen;
+}
+
+.start-button {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    padding-top: 30px;
+    color: #4e9b50;
+}
+
+
+.memory-card{
+    border: 1px solid #5cb7ff;
+    height: 90px;
+    font-size: xx-large;
+    font-family: initial;
+    border-radius: 10px;
+    background: #1a88c6;
+    
+    color:#1a88c6;
+}
+.flip{
+    border: 1px solid #5cb7ff;
+    height: 90px;
+    font-size: xx-large;
+    font-family: initial;
+    border-radius: 10px;
+    background: #1a88c6;
+    color: white;
+    }
